@@ -42,7 +42,7 @@ ul {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.base-container.header {
+.header {
   display: flex;
   align-items: center;
   border: 1px solid --line;
@@ -67,7 +67,7 @@ ul {
   padding-top: 24px;
   padding-bottom: 25px;
   padding-left: 0;
-  padding-right: 93px;
+  margin-right: 93px;
 
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -175,6 +175,10 @@ ul {
   margin-right: 30px;
   width: 270px;
 }
+.personalities-list:last-child {
+  margin-right: 0px;
+}
+
 .personalities-base {
   display: flex;
   margin-top: 0;
@@ -182,11 +186,15 @@ ul {
   padding-left: 0;
 }
 .subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .text {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.7;
   color: var(--text-color);
 }
@@ -244,6 +252,8 @@ ul {
   line-height: 1.18;
 }
 .photo-text {
+  padding-bottom: 30px;
+  margin-bottom: 0;
   font-size: 16px;
   color: var(--text-color);
   line-height: 1.18;
@@ -311,9 +321,15 @@ ul {
 .button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 0;
   margin-top: 0;
   list-style: none;
+}
+.section-portfolio {
+  padding-top: 94px;
+  margin-bottom: 34px;
 }
 
 .examples {
@@ -357,7 +373,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 0;
+  padding-bottom: 94px;
 }
 
 .examples-list:nth-child(3n) {
