@@ -275,13 +275,13 @@ ul {
   margin-bottom: 0;
 }
 .footer {
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bgc);
 }
 
 .logo-footer {
   display: inline-block;
-  padding-top: 60px;
   margin-bottom: 20px;
 
   color: var(--accent-color);
@@ -310,7 +310,6 @@ ul {
 }
 .tel {
   margin-top: 9px;
-  padding-bottom: 60px;
 }
 /*Сторінка портфоліо, хедер і футер перенесені*/
 .button {
