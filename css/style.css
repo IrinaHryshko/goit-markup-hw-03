@@ -119,22 +119,56 @@ ul {
   padding-left: 0px;
 }
 .list-address {
+  display: inline-flex;
+  align-items: center;
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color);
+  fill: var(--text-color);
 }
 .list-address:hover,
+.icon-nav1:hover,
+.icon-nav1:focus,
+.icon-nav2:hover,
+.icon-nav2:focus,
 .list-address:focus {
   color: var(--sub-accent);
+  fill: var(--sub-accent);
 }
 .list:hover,
 .list:focus {
   color: var(--sub-accent);
 }
+.icon-nav1 {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+.icon-nav2 {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
 
 /*герой*/
 .hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: var(--bgc);
   text-align: center;
   height: 600px;
@@ -211,6 +245,9 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+}
+.work-top {
+  padding-top: 0;
 }
 .working {
   display: flex;
@@ -385,6 +422,11 @@ ul {
   margin-bottom: 30px;
 
   background-color: var(--accent-color);
+}
+
+.examples-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .border {
   padding-top: 20px;
