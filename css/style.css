@@ -14,6 +14,8 @@
   --color-focus: rgba(0, 0, 0, 0.14);
   --sub-focus: rgba(0, 0, 0, 0.2);
   --mail-style: rgba(255, 255, 255, 0.6);
+  --bgc-customers: #f5f5f5;
+  --border-btn: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -315,6 +317,44 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+.regular-customers {
+  margin-bottom: 50px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.customers {
+  padding: 0;
+  margin: 0;
+  width: 170px;
+  height: 92px;
+  background-color: var(--accent-color);
+  border: 1px solid var(--border-btn);
+  border-radius: 4px;
+}
+
+.customers-list:not(:last-child) {
+  margin-right: 30px;
+  cursor: pointer;
+}
+.customers:hover,
+.icon-customers:hover,
+.customers:focus,
+.icon-customers:focus {
+  border-color: var(--sub-accent);
+  fill: var(--sub-accent);
+}
+
+.icon-customers {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  fill: var(--text-color);
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -351,6 +391,38 @@ ul {
 }
 .tel {
   margin-top: 9px;
+}
+.footer-flex {
+  display: flex;
+}
+.social-networks {
+  margin: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-footer {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  cursor: pointer;
+}
+.icon-footer:hover {
+  background-color: var(--sub-accent);
+}
+.icon-insta {
+  padding: 0;
+  fill: var(--accent-color);
+}
+.icon-insta:hover {
 }
 /*Сторінка портфоліо, хедер і футер перенесені*/
 .button {
