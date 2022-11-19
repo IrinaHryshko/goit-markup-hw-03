@@ -121,43 +121,39 @@ ul {
   padding-left: 0px;
 }
 .list-address {
-  display: inline-flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  display: inline-block;
+
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color);
-  fill: var(--text-color);
 }
+
 .list-address:hover,
-.icon-nav1:hover,
-.icon-nav1:focus,
-.icon-nav2:hover,
-.icon-nav2:focus,
 .list-address:focus {
   color: var(--sub-accent);
   fill: var(--sub-accent);
 }
+
 .list:hover,
 .list:focus {
   color: var(--sub-accent);
 }
 .icon-nav1 {
+  padding: 0;
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
   fill: currentColor;
 }
 .icon-nav2 {
+  padding: 0;
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
   fill: currentColor;
 }
 
 /*герой*/
 .hero {
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -218,6 +214,16 @@ ul {
 }
 .personalities-list:last-child {
   margin-right: 0px;
+}
+.benefits-container {
+  width: 270px;
+  height: 120px;
+  background-color: var(--bgc-section);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .personalities-base {
@@ -317,6 +323,36 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+.icon-team {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-top: 16px;
+}
+.icon-team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--border-btn);
+  background-color: var(--accent-color);
+}
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-team-list:hover,
+.icon-team-list:focus {
+  background-color: var(--sub-accent);
+  color: var(--accent-color);
+}
+.icon-social-link {
+  fill: currentColor;
+}
 .regular-customers {
   margin-bottom: 50px;
   margin-top: 0;
@@ -327,6 +363,9 @@ ul {
 }
 
 .customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   width: 170px;
@@ -334,34 +373,31 @@ ul {
   background-color: var(--accent-color);
   border: 1px solid var(--border-btn);
   border-radius: 4px;
+  color: var(--border-btn);
 }
 
 .customers-list:not(:last-child) {
   margin-right: 30px;
-  cursor: pointer;
 }
 .customers:hover,
-.icon-customers:hover,
-.customers:focus,
-.icon-customers:focus {
+.customers:focus {
+  color: var(--sub-accent);
   border-color: var(--sub-accent);
-  fill: var(--sub-accent);
 }
 
 .icon-customers {
   display: flex;
-  list-style: none;
+  fill: currentColor;
   margin: 0;
-  fill: var(--text-color);
 }
 
 .footer {
-  padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bgc);
 }
 
 .logo-footer {
+  margin-top: 60px;
   display: inline-block;
   margin-bottom: 20px;
 
@@ -392,11 +428,20 @@ ul {
 .tel {
   margin-top: 9px;
 }
+.icon-container-footer {
+  margin-left: 70px;
+  margin-top: 72px;
+}
 .footer-flex {
   display: flex;
+  margin: 0;
 }
 .social-networks {
-  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+
   color: var(--accent-color);
   font-weight: 700;
   font-size: 14px;
@@ -405,25 +450,37 @@ ul {
 .social-list:not(:last-child) {
   margin-right: 10px;
 }
-
-.icon-footer {
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+.social-list {
   width: 44px;
   height: 44px;
-  border: none;
-  cursor: pointer;
 }
-.icon-footer:hover {
+.footer-container {
+  display: flex;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.icon-footer:hover,
+.icon-footer:focus {
   background-color: var(--sub-accent);
 }
 .icon-insta {
+  align-items: center;
+  justify-content: center;
   padding: 0;
   fill: var(--accent-color);
 }
-.icon-insta:hover {
-}
+
 /*Сторінка портфоліо, хедер і футер перенесені*/
 .button {
   font-family: inherit;
@@ -471,6 +528,7 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--brand-color);
 }
 .name-examples {
   margin-top: 4px;
@@ -496,10 +554,6 @@ ul {
   background-color: var(--accent-color);
 }
 
-.examples-list:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .border {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -508,6 +562,13 @@ ul {
   border-bottom: 1px solid var(--border);
   border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
+}
+.examples-link {
+  display: block;
+}
+.examples-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-container {
